@@ -1,7 +1,11 @@
 const botao = document.querySelectorAll(".botao");
 
 /*ao apertar o botão, é adicionada a classe "ativo" a ele, mudando a cor.*/
+
 for(let i=0;i <botao.length;i++){
+
+    botao[i].classList.remove("ativo");
+    
     botao[i].onmousedown = function(){
 
         for(let j=0;j<botao.length;j++){
