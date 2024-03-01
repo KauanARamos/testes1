@@ -1,8 +1,20 @@
-const numeros = document.querySelectorAll(".numero");
+const botao = document.querySelectorAll(".botao");
 
-for(let n=0; n<)
+/*ao apertar o botão, é adicionada a classe "ativo" a ele, mudando a cor.*/
+for(let i=0;i <botao.length;i++){
+    botao[i].onmousedown = function(){
 
-numeros[n].classList.remove('impar');
-numeros[n].classList.add('par');
+        for(let j=0;j<botao.length;j++){
+            botao[j].classList.remove("ativo");
+        }
 
-console.log(numeros);
+        botao[i].classList.add("ativo");
+    }
+    /*ao soltar o botão do mouse, a classe "ativo" é removida, deixando o botão com a cor padrão mais uma vez.*/
+    botao[i].onmouseup = function(){
+        
+        for(let j=0;j<botao.length;j++){
+            botao[j].classList.remove("ativo")
+        }
+    }
+}

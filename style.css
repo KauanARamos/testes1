@@ -2,8 +2,10 @@
 
 :root{
     --cor-de-fundo: #3A324A;
-    --cor-da-aba: #4F486E;
+    --cor-da-caixa: #4F486E;
     --texto: #7DFAE7;
+    --bordas-escuras: #15121b;
+    --bordas-claras: #2A2436;
 }
 
 body{
@@ -17,16 +19,39 @@ body{
     flex-direction: column ;
     justify-content: center;
     align-items: center;
-    max-width: 1000px;
+    max-width: 1500px;
     width: 100%;
     margin: 0 auto;
+    font-size: 28px
 }
 
-
-.impar{
-    color: red;
+.caixa-de-texto{
+    font-family: "Kode Mono", monospace;
+    font-size: 28px;
+    background-color: var(--cor-da-caixa);
+    color: var(--texto);
+    border-top: 2px solid var(--bordas-escuras);
+    border-left: 2px solid var(--bordas-escuras);
+    border-right: 2px solid var(--bordas-claras);
+    border-bottom: 2px solid var(--bordas-claras);
+    margin-bottom: 5%;
 }
 
+/*botao padrão*/
+.botao{
+    font-family: "Kode Mono", monospace;
+    font-size: 24px;
+    background-color: var(--cor-da-caixa);
+    color: var(--texto);
+    border-top: 2px solid var(--bordas-claras);
+    border-left: 2px solid var(--bordas-claras);
+    border-right: 2px solid var(--bordas-escuras);
+    border-bottom: 2px solid var(--bordas-escuras);
+    
+}
 
-
+/*classe que troca a cor do botão*/
+.ativo{
+    background-color: var(--cor-de-fundo);
+}
 
