@@ -11,11 +11,17 @@
         <h2 class="titulo">Detector de números pares e ímpares</h2>
         <div>
             <form>
-                <input class="caixa-de-texto">
+                <input id="input" type="number" class="input">
             </form>
         </div>
         <div>
-            <button class="botao ativo">"Esse número é par ou ímpar?"</button>
+            <button onmousedown="input()" class="botao ativo">"Esse número é par ou ímpar?"</button>
+        </div>
+        <div class="resposta">
+            <h1 class="par">Seu número é <span>PAR</span></h1>
+        </div>
+        <div class="resposta">
+            <h1 class="impar">Seu número é <span>ÍMPAR</span></h1>
         </div>
     </section>
     <script src="main.js"></script>

@@ -25,16 +25,29 @@ body{
     font-size: 28px
 }
 
-.caixa-de-texto{
+.input{
     font-family: "Kode Mono", monospace;
     font-size: 28px;
     background-color: var(--cor-da-caixa);
     color: var(--texto);
+    width: 100%;
     border-top: 2px solid var(--bordas-escuras);
     border-left: 2px solid var(--bordas-escuras);
     border-right: 2px solid var(--bordas-claras);
     border-bottom: 2px solid var(--bordas-claras);
     margin-bottom: 5%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 /*botao padrão*/
@@ -43,10 +56,12 @@ body{
     font-size: 24px;
     background-color: var(--cor-da-caixa);
     color: var(--texto);
+    width: 100%;
     border-top: 2px solid var(--bordas-claras);
     border-left: 2px solid var(--bordas-claras);
     border-right: 2px solid var(--bordas-escuras);
     border-bottom: 2px solid var(--bordas-escuras);
+    border-radius: 40px;
     
 }
 
@@ -55,3 +70,40 @@ body{
     background-color: var(--cor-de-fundo);
 }
 
+.resposta{
+    display: none;
+}
+
+.resposta.ativo{
+    font-size: 50px;
+    align-content: center;
+    text-align: center;
+    background-color: var(--cor-da-caixa);
+    max-width: 750px;
+    width: 75%;
+    margin-top: 30px;
+    display: block;
+    border-top: 2px solid var(--bordas-claras);
+    border-left: 2px solid var(--bordas-claras);
+    border-right: 2px solid var(--bordas-escuras);
+    border-bottom: 2px solid var(--bordas-escuras);
+    border-radius: 40px;
+}
+
+.par span{
+    color:rgb(32, 250, 32);
+}
+
+.impar span{
+    color: red;
+}
+
+@media screen and (min-width: 768px) {
+    .botao{
+        display: flex;
+    }
+    .caixa-de-texto{
+        display: flex;
+    }
+    
+}
