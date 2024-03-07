@@ -7,15 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header id="header">
+        <a id="logo" href="">KauanRamos</a>
+        <nav id="nav">
+            <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="https://github.com/KauanARamos">Github</a></li>
+                <li><a href="https://twitter.com/PudimAtomicuo">Twitter</a></li>
+                <li><a href="https://www.youtube.com/@pudimatomico_">Youtube</a></li>
+
+            </ul>
+        </nav>
+    </header>
     <section class="conteudo">
         <h2 class="titulo">Detector de números pares e ímpares</h2>
         <div>
             <form>
-                <input id="input" type="number" class="input">
+                <input id="meuinput" type="number" class="input">
             </form>
         </div>
         <div>
-            <button onmousedown="input()" class="botao ativo">"Esse número é par ou ímpar?"</button>
+            <button class="botao ativo">"Esse número é par ou ímpar?"</button>
         </div>
         <div class="resposta">
             <h1 class="par">Seu número é <span>PAR</span></h1>
